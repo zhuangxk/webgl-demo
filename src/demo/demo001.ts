@@ -37,8 +37,11 @@ gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
 
 const positions = [
     0, 0,
-    0, 0.5,
-    0.7, 0,
+    0, 1,
+    1, 0,
+    0, 0,
+    0, -1,
+    -1, 0,
 ];
 // 通过绑定点传数据到缓冲区 
 // gl.STATIC_DRAW 提示WebGL我们不会经常改变这些数据。
@@ -66,7 +69,7 @@ gl.vertexAttribPointer(positionAttributeLocation, size, type, normalize, stride,
 
 const primitiveType = gl.TRIANGLES;
 // var offset = 0;
-const count = 3;
+const count = 6;
 // 从向量数组中绘制图元
 gl.drawArrays(primitiveType, 0, count);
 

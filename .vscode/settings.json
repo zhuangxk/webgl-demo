@@ -1,0 +1,11 @@
+{
+    "glsllint.supportedLangsWithStringLiterals": [
+        "vue",
+        "html",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "elm"
+    ]
+}
